@@ -31,3 +31,14 @@ $userObj->displayName();
 echo "<br />";
 
 echo "Outside Constant: ".$userObj::NAME;
+
+// use const keyword
+
+// Deffernce between const vs variable
+
+// 1. const all time public , no access modiffer use    vs variable access modiffer( public, protected, private) use any time
+// 2. const name block letter  vs variable with $ and small letter
+// 3. No change value  vs can change value .
+
+
+// Declaration : className :: const_name   and classObj::const_name
