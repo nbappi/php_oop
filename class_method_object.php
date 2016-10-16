@@ -15,6 +15,7 @@
    }
 
    $objectPerson = new Person;
+     // '->' is a object operator
    echo $objectPerson->name . "<br />";    // Nuruzzaman Bappi
    $objectPerson->name = "Md. Nuruzzaman Bappi";
    $objectPerson->personName();   //  Md. Nuruzzaman Bappi
