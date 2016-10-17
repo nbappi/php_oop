@@ -17,13 +17,19 @@ class php{
 	public function getFrame(){
 		return $this->frame;
 	}
+
+	public function __clone(){
+		 $php = new php();
+		 $php->setFrame($this->frame);
+		 return $php;
+	}
 }
 
 $php = new php;
 $php->setCat("OOP");
 $php->setFrame("Spring");
 
-// $java = $php;   // copy by reference, not val
+// $java = $php;   // copy by reference, not value
 $java = clone $php;
 $java->setFrame("Codeigniter");
 
